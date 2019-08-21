@@ -17,6 +17,6 @@
     "url": "https://github.com/catchOneW/web-base/issues"
   },
   "dependencies": {
-    "@wkq/react-ui": "^1.0.0"
+    "@wkq/wkq-ui": "^1.0.0"
   }
 }

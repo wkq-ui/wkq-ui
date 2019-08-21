@@ -1,11 +1,2 @@
-# `wkq-site`
-
-> TODO: description
-
-## Usage
-
-```
-const wkqSite = require('wkq-site');
-
-// TODO: DEMONSTRATE API
-```
+### 问题
+start不能直接跑es6代码，需要web的形式转模块，run server
