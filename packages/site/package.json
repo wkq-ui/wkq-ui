@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wkq/wkq-ui": "^1.0.2",
+    "@wkq/wkq-ui": "^1.0.6",
     "async-validator": "^1.11.2",
     "css-loader": "^2.1.1",
     "node-sass": "^4.12.0",

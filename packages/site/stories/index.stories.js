@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import classnames from 'classnames';
 import '../../../../web-base/ui-state/scss/real-world/pc-ui/index.scss'
-import Button from '@wkq/wkq-ui'
+import {Button} from '@wkq/wkq-ui'
 var data = [
   { name: 'item', type: 'primary' },
   { name: 'item', type: 'secondary' },

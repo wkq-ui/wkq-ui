@@ -1,19 +1,17 @@
 {
   "name": "@wkq/wkq-ui",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "> TODO: description",
   "author": "wkq <1132620342@qq.com>",
   "homepage": "https://github.com/catchOneW/web-base#readme",
   "license": "ISC",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production tsc --module ES6 --outDir ./build/es"
+    "prebuild": "cross-env NODE_ENV=production rimraf build",
+    "build": "yarn build:cjs && yarn build:es && yarn build:umd && yarn build:copy-files",
+    "build:cjs": "cross-env NODE_ENV=production tsc --module CommonJS --outDir ./build",
+    "build:es": "cross-env NODE_ENV=production tsc --module ES6 --outDir ./build/es",
+    "build:umd": "cross-env NODE_ENV=production tsc --module UMD --outDir ./build/umd",
+    "build:copy-files": "ts-node ../../scripts/copy-files.ts"
   },
   "bugs": {
     "url": "https://github.com/catchOneW/web-base/issues"
@@ -27,6 +25,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-transition-group": "^2.9.2"
   },
-  "main": "build/es/index.js",
-  "module": "build/es/index.js"
+  "main": "build/index.js",
+  "module": "build/es/index.js",
+  "typings": "build/index.d.ts"
 }

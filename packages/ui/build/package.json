@@ -1,0 +1,32 @@
+{
+	"name": "@wkq/wkq-ui",
+	"version": "1.0.6",
+	"description": "> TODO: description",
+	"author": "wkq <1132620342@qq.com>",
+	"homepage": "https://github.com/catchOneW/web-base#readme",
+	"license": "ISC",
+	"scripts": {
+		"prebuild": "cross-env NODE_ENV=production rimraf build",
+		"build": "yarn build:cjs && yarn build:es && yarn build:umd && yarn build:copy-files",
+		"build:cjs": "cross-env NODE_ENV=production tsc --module CommonJS --outDir ./build",
+		"build:es": "cross-env NODE_ENV=production tsc --module ES6 --outDir ./build/es",
+		"build:umd": "cross-env NODE_ENV=production tsc --module UMD --outDir ./build/umd",
+		"build:copy-files": "ts-node ../../scripts/copy-files.ts"
+	},
+	"bugs": {
+		"url": "https://github.com/catchOneW/web-base/issues"
+	},
+	"dependencies": {
+		"react-transition-group": "^4.2.1"
+	},
+	"devDependencies": {
+		"@types/node": "^10.11.0",
+		"@types/react": "^16.8.19",
+		"@types/react-dom": "^16.8.4",
+		"@types/react-transition-group": "^2.9.2"
+	},
+	"main": "./index.js",
+	"module": "./es/index.js",
+	"typings": "./index.d.ts",
+	"private": false
+}
