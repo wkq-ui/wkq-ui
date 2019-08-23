@@ -1,6 +1,6 @@
 {
   "name": "@wkq/wkq-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "wkq <1132620342@qq.com>",
   "homepage": "https://github.com/catchOneW/web-base#readme",
@@ -13,9 +13,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "cross-env NODE_ENV=production tsc --module ES6 --outDir ./build/es",
-    "pub": "npm  publish --public"
+    "build": "cross-env NODE_ENV=production tsc --module ES6 --outDir ./build/es"
   },
   "bugs": {
     "url": "https://github.com/catchOneW/web-base/issues"
@@ -29,5 +27,6 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-transition-group": "^2.9.2"
   },
+  "main": "build/es/index.js",
   "module": "build/es/index.js"
 }

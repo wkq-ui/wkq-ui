@@ -1,22 +1,33 @@
 {
-  "name": "wkq-site",
+  "name": "sb-react",
   "version": "1.0.0",
-  "description": "> TODO: description",
-  "author": "wkq <1132620342@qq.com>",
-  "homepage": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/catchOneW/web-base.git"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "start": "node ./src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook"
   },
-  "bugs": {
-    "url": "https://github.com/catchOneW/web-base/issues"
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@wkq/wkq-ui": "^1.0.0"
+    "@wkq/wkq-ui": "^1.0.2",
+    "async-validator": "^1.11.2",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "raf": "^3.4.1",
+    "react-transition-group": "^4.0.1",
+    "react-use": "^9.8.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "throttle-debounce": "^2.1.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^5.0.11",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@babel/core": "^7.4.4",
+    "babel-loader": "^8.0.6"
   }
 }

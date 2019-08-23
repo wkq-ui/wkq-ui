@@ -24,13 +24,17 @@ react配置
 # Cannot find module '@babel/types'.
 "moduleResolution": "node",
 
-# 包路径
+# main有用
 先build到文件夹
 "module": "build/es/index.js",
 
 module字段https://github.com/sunyongjian/blog/issues/37
 es6用
 
-main字段指定了加载的入口文件，require('moduleName')就会加载这个文件。这个字段的默认值是模块根目录下面的index.js。
+main必须的,字段指定了加载的入口文件，require('moduleName')就会加载这个文件。这个字段的默认值是模块根目录下面的index.js。
+
+# publish build文件夹的有问题
+自己的，只有一个index，没有其他的
+别人的，有index，有type，而且所有组件变成了 js+d.ts
 
 # 源码调试-进入下水道的方式
