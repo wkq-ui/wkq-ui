@@ -1,2 +1,2 @@
-https://wkq-ui.github.io/wkq-ui/packages/site/storybook-static/index.html
+https://wkq-ui.github.io/wkq-ui/packages/storybook-static
 
